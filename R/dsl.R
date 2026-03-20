@@ -50,13 +50,14 @@ dsl <- function(model = "lm",
                 family = "gaussian",
                 cross_fit = 5,
                 sample_split = 10,
-                seed = 1234){
+                seed = 1234,
+                lambda = 0){
 
   # ##################
   # Setup
   # ##################
   optim_method <-  "L-BFGS-B"
-  lambda <-  0
+  #lambda <-  0
 
   # data.frame
   class(data) <- "data.frame"
